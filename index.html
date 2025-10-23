@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Aniversário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="rw">
+    <button id="tocar">Tocar</button>
+<button id="pausar">Pausar</button>
+    
+    <h1 id="m"><em>PARABÉNS MEU AMOR</em></h1>
+    <section>
+        <p id="a1">a música só podia ser a sua preferida</p>
+        
+        <p id="a"><strong>Nada mais gratificante que VOCÊ ser meu amor, estou fazendo esse site não para me gabar kkk, falando que sei fazer sites ou algo do tipo, estou fazendo isso para te amor</strong></p>
+    </section>
+<figure>
+    <img src="imgs/mcra.jpg" alt="radaemaria" id="r">
+</figure>
+
+<section>
+    <main>
+        <h1 id="a1"> VOCÊ ACEITA CASAR COMIGO?</h1>
+        <p id="e">se sim, entra no whatsapp e fale assim: <em><strong>Lógico DIVO</strong></em></p>
+    </main>
+</section>
+
+<section>
+    <main>
+        <h1 id="j"><em>Os meus parabéns</em></h1>
+        <p id="mc"><em>Amor, nunca me senti tão bem como me sinto no exato momento, sinto me vivo sempre que vejo um bom dia, um boa noite, ou até um tou estressada hoje, eu sempre deixo meu celular no não pertube para me ficar com a ansiedade de ver a sua mensagem chegar, e de quando puxar a barra de notificação estiver lá <em><strong>MARIA CLARA</strong></em>, isso me faz ganhar o dia, não sei mais dormi sem o seu boa noite, parece que meu mundo não funciona se VOCÊ não tiver nele, sinto que estamos numa fase muito boa da vida, e que sempre que vejo VOCÊ, parece que sempre é a primeira vez, VOCÊ é incrível amor, VOCÊ é a pessoa que encanta meu ser, que mostra a me quem eu devo ser, que me mostra que tudo é possivel, e que nada é por acaso, amo nossas conversas de futuro, quando VOCÊ, manda reels sobre crianças, bebês é encantador para me, saber que os seus filhos serão meus também, isso me traz paz e alegría, que essa nova etapá da sua vida de 18 anos seja repleta de felicidades, e que eu esteja sempre nela, na saúde e na doença, sempre nós, na alegria e na tristeza, VOCÊ, é a pessoa mais doce, mais elegante que conheço ou "conheci", e estou disposto a fazer de tudo, as vezes meus texto foge tudo do sentido kkk, mais esse aqui o sentido dele é mostrar que tu é tudo para me, e que se não fosse VOCÊ eu não sei onde eu estaria, espero do fundo do meu coração, que esse dia 24/10/2025, seja repleto de felicidades para voce meu amor, e que curta muito, EU TE AMO MUITO MUITO, quero sua felicidade antes da minha, porque TU É TU, e Clara Maria, VOCÊ É A MULHER DA MINHA VIDA, PARABÉNS MEU AMOR, EU TE AMO</em></p>
+    </main>
+</section>
+
+
+
+<div class="heart-container"></div>
+
+
+
+
+<script>
+    let musica = new Audio('Tempo Perdido.mp3');
+    document.getElementById('tocar').onclick = () => musica.play();
+    document.getElementById('pausar').onclick = () => musica.pause();
+     
+
+
+
+
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+    const container = document.querySelector('.heart-container');
+
+    function createHeart() {
+        const heart = document.createElement('div');
+        heart.classList.add('heart');
+        heart.style.left = Math.random() * 100 + 'vw';
+        heart.style.animationDuration = Math.random() * 5 + 5 + 's';
+        heart.style.width = Math.random() * 30 + 20 + 'px';
+        heart.style.height = heart.style.width;
+
+        container.appendChild(heart);
+
+        setTimeout(() => {
+            heart.remove();
+        }, 10000);
+    }
+
+    setInterval(createHeart, 300);
+});
+
+</script>
+</body>
+</html>
